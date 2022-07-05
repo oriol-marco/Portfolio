@@ -4,6 +4,7 @@ certifi==2022.5.18.1
 click==8.0.3
 colorama==0.4.5
 Django==3.2.8
+gunicorn==20.1.0
 mypy-extensions==0.4.3
 pathspec==0.9.0
 Pillow==8.4.0
@@ -14,4 +15,5 @@ sqlparse==0.4.2
 tomli==1.2.2
 typing-extensions==3.10.0.2
 tzdata==2022.1
+whitenoise==6.2.0
 wincertstore==0.2
