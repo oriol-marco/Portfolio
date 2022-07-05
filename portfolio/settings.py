@@ -1,6 +1,7 @@
 
 from pathlib import Path
 import os
+from django.urls import clear_script_prefix
 
 import django_heroku
 
