@@ -17,4 +17,4 @@ typing-extensions==3.10.0.2
 tzdata==2022.1
 whitenoise==6.2.0
 wincertstore==0.2
-python==3.9.12
+python==3.9
