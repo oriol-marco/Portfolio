@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-@#=xb9v^w2%bv^1n&(9uqpt-5i_&4#3ct9+3om&k_5q-phqee&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://portfolio-oriol-marco.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -130,6 +130,8 @@ STATICFILES_DIRS = [
 
 #new
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
