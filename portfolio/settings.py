@@ -131,6 +131,8 @@ STATICFILES_DIRS = [
 #new
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+DATABASES['default'] = dj_database_url.config()
+
 
 
 # Default primary key field type
