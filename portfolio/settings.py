@@ -4,7 +4,7 @@ import os
 from django.urls import clear_script_prefix
 
 #new
-import django_heroku
+#import django_heroku
 import dj_database_url
 from decouple import config
 
@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-@#=xb9v^w2%bv^1n&(9uqpt-5i_&4#3ct9+3om&k_5q-phqee&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'portfolio-oriol-marco.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -47,7 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    #'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
@@ -131,7 +131,7 @@ STATICFILES_DIRS = [
 #new
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-DATABASES['default'] = dj_database_url.config()
+#DATABASES['default'] = dj_database_url.config()
 
 
 
@@ -141,4 +141,4 @@ DATABASES['default'] = dj_database_url.config()
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #new
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
