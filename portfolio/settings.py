@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-@#=xb9v^w2%bv^1n&(9uqpt-5i_&4#3ct9+3om&k_5q-phqee&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*', 'portfolio-oriol-marco.herokuapp.com','127.0.0.1']
 
@@ -131,8 +131,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root/')
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root/')
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static_root/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 #STATICFILES_DIRS = [
